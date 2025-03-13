@@ -9,7 +9,6 @@ const connectDB = async () =>{
     } catch (error) {
         console.log("Loaded ENV Variables:", process.env);
         console.log("MONGODB_URI:", process.env.MONGODB_URI);
-
         console.log("MongoDB Connection Failed ",error);
         process.exit(1)
     }
